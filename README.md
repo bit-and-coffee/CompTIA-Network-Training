@@ -18,3 +18,4 @@
 →pythonのインストール必須
 3. `data.json`が生成される。中身の値（リスト）を`script.js`の`questions`変数に代入
 4. `test_comptia-network.html`を起動し、`questions`に代入した値が問題、解答群となって表示
+5. 終了ボタンを押すと結果表示画面が表示され、CSV出力ボタンで結果が.csv形式で表示されます。
