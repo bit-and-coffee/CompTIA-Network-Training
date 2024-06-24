@@ -1,7 +1,8 @@
-# CompTIA-Network-Training
+# CompTIA-Network-Training（Webアプリ）
 ## はじめに
 閲覧ありがとうございます。このファイルにつていはローカルで起動することを前提として作っていますので、webサーバでの動作については検証していません。また使用される環境次第でプログラムの修正が必要ですので、ご承知ください。
-また、pythonについてはanaconda3で実行しています。
+また、pythonについてはanaconda3で実行しています。<br>
+コード使用の際はSNSリンクからコメント頂けると嬉しいです。また、コードについてのレビューも受け付けています。
 
 ## ファイル構成
 - test_comptia-network.html
@@ -19,3 +20,4 @@
 3. `data.json`が生成される。中身の値（リスト）を`script.js`の`questions`変数に代入
 4. `test_comptia-network.html`を起動し、`questions`に代入した値が問題、解答群となって表示
 5. 終了ボタンを押すと結果表示画面が表示され、CSV出力ボタンで結果が.csv形式で表示されます。
+
