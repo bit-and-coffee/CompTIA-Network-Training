@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="NetworkPlus Logo Certified CE.png">
+<title>CompTIA Network+ Training</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #000;
+  }
+  .header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+  }
+  .content-box {
+    margin-top: 10px;
+    border: 2px solid #000;
+    height: 200px;
+    position: relative;
+    overflow: auto; /* ここを追加 */
+    padding: 10px;
+  }
+  .question-box {
+    padding: 10px;
+  }
+  .answers {
+    list-style: none;
+    padding: 0;
+  }
+  .answers li {
+    margin-bottom: 5px;
+  }
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: 1px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .csv-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: 1px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+    
+  }
+  .end-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: 1px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+    
+  }
+  .button:hover {
+    background-color: #f0f0f0;
+  }
+  .csv-button:hover {
+    background-color: #f0f0f0;
+  }
+  .end-button:hover {
+    background-color: #f0f0f0;
+  }
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+    display: flex; /* Flexboxを使用 */
+    justify-content: center; /* 中央揃え */
+    align-items: center; /* 垂直方向も中央揃え */
+  }
+  .header img {
+    margin-right: 20px; /* タイトルとの間隔 */
+    width: 100px; /* 画像の幅 */
+    height: auto; /* 画像の高さを自動調整 */
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="NetworkPlusLogoCertifiedCE.jpg" alt="CompTIA Network+ Logo"> <!-- 画像を追加 -->
+      <h1>CompTIA Network+ Training</h1>
+    </div>
+    <div id="results-container"></div>
+    <div id="question-number" class="question-number">問1</div>
+    <div class="content-box">
+      <p></p>
+    <div id="question-text"></div><!-- Assume image or video content here -->
+      
+    </div>
+    <div class="question-box">
+      <ul class="answers">
+        <li><input type="checkbox" id="answer1"><label for="answer1">Answers1</label></li>
+        <li><input type="checkbox" id="answer2" checked><label for="answer2">Answers2</label></li>
+        <li><input type="checkbox" id="answer3"><label for="answer3">Answers3</label></li>
+        <li><input type="checkbox" id="answer4" checked><label for="answer4">Answers4</label></li>
+      </ul>
+      <div class="navigation-buttons"> <!-- 追加: ナビゲーションボタンのコンテナ -->
+        <button class="button" onclick="previousQuestion()">前へ</button>
+        <button class="button" onclick="nextQuestion()">次へ</button>
+        <button class="button" onclick="checkAnswer()">正解を表示</button>
+      </div>
+      <div class="result-message"></div>
+    </div>
+    <div class="footer">
+      <button class="end-button" onclick="showResults()">終了</button>
+      <button class="csv-button" onclick="exportResultsToCSV()">CSV出力</button>
+    </div>
+    <div class="end-message"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
