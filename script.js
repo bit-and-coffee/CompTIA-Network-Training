@@ -271,5 +271,9 @@ function checkAnswer() {
         }
     }, 3000); // 3秒後に実行
 }
+
+function page_reload() {
+    location.reload(); 
+}
 //模擬試験スタート
 displayQuestion();
